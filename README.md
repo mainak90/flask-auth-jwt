@@ -27,15 +27,15 @@ JWT params
 
 #### Endpoints
 
-| Endpoint/ | Verb | Description |
-| --- | --- | --- |
-| /auth | POST | Authenticate an user that is already registered and return a JWT token |
-| /register | POST | Register an user into the system, it adds user and salted password into MongoDB |
-| /refresh | POST | Generate a new access token from the provided refresh token |
-| /user | GET, DELETE, PATCH | Check if an user exists, delete the user or modify and existing user |
-| /logout | DELETE | Logout the current user by invalidating the current user token |
-| /revoke-refresh-token | DELETE | Revoke the users refresh token and return an OK response |
-| /{path}/{file} | GET | Proxy endpoint for static contents served out of the 'public' document path | 
+| Endpoint | Verb | Description |
+| :---: | :---: | :---: |
+| /auth | `POST` | Authenticate an user that is already registered and return a JWT token |
+| /register | `POST` | Register an user into the system, it adds user and salted password into MongoDB |
+| /refresh | `POST` | Generate a new access token from the provided refresh token |
+| /user | `GET, DELETE, PATCH` | Check if an user exists, delete the user or modify and existing user |
+| /logout | `DELETE` | Logout the current user by invalidating the current user token |
+| /revoke-refresh-token | `DELETE` | Revoke the users refresh token and return an OK response |
+| /{path}/{file} | `GET` | Proxy endpoint for static contents served out of the 'public' document path | 
 
 #### Features
 1) Check for expired token.

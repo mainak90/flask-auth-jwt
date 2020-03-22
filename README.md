@@ -43,3 +43,4 @@ JWT params
 3) Check for blacklisted token.
 4) Check for unauthorized/bad token.
 5) For now no flask blueprints used, tests and code refactor to use views/models/blueprints on the way
+6) Integrate json web signing and encryption/decryption of generated/consumed tokens(future feature) 
